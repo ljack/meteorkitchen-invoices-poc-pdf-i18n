@@ -1,15 +1,19 @@
 {
 	"application": {
-		"title": "laskuni",
+		"locales": {
+			"fi": "",
+			"en": ""
+		},
+		"title": "{{_ 'title'}}",
 		"theme": "bootswatch-paper",
-		"on_user_created_code": "Customers.insert({ name: 'Chuck Norris', email: 'internet@chucknorris.com', ownerId: user._id });",
+		"on_user_created_code": "Customers.insert({ name: 'Capt. Ranger Cordell Walker', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Chuck Norris', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Chuck Slaughter', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Cliff Garrett', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Col. James Braddock', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Col. Scott McCoy', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Colonel James Braddock', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Colt', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Cordell Walker', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Eddie Cusack', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Frank Shatter', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Grogan', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'J.J. McQuade', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Jake Fallon', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Jake Wilder', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'John Shepherd', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'John T. Booker', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Josh Randall', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Joshua McCord', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Karate Advisor', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Maj. Scott McCoy', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Man in the House of 7 Joys', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Matt Hunter', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Matt Logan', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Matthew', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Max Donigan', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'McKenna', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Ranger Cordell Walker', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Scott James', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Sean Kane', email: 'internet@chucknorris.com', ownerId: user._id });\nCustomers.insert({ name: 'Sheriff Dan Stevens', email: 'internet@chucknorris.com', ownerId: user._id });",
 		"collections": [
 			{
 				"name": "customers",
 				"fields": [
 					{
 						"name": "name",
-						"title": "Name",
+						"title": "{{_ 'name'}}",
 						"required": true,
 						"exportable": true,
 						"type": "string",
@@ -44,7 +48,7 @@
 					},
 					{
 						"name": "phone",
-						"title": "Phone",
+						"title": "{{_ 'phone'}}",
 						"default": "-",
 						"exportable": true,
 						"type": "string",
@@ -79,7 +83,7 @@
 					},
 					{
 						"name": "email",
-						"title": "E-mail",
+						"title": "{{_ 'email'}}",
 						"type": "email",
 						"exportable": true,
 						"default": "",
@@ -114,7 +118,7 @@
 					},
 					{
 						"name": "note",
-						"title": "Note",
+						"title": "{{_ 'note'}}",
 						"input": "textarea",
 						"exportable": true,
 						"show_in_dataview": false,
@@ -149,7 +153,7 @@
 					},
 					{
 						"name": "totalAmount",
-						"title": "Invoiced",
+						"title": "{{_ 'totalAmount'}}",
 						"type": "float",
 						"show_in_insert_form": false,
 						"show_in_update_form": false,
@@ -184,8 +188,9 @@
 					},
 					{
 						"name": "streetAddress",
-						"title": "",
+						"title": "{{_ 'streetAddress'}}",
 						"type": "string",
+						"exportable": true,
 						"default": "",
 						"min": "",
 						"max": "",
@@ -193,34 +198,34 @@
 						"format": "",
 						"searchable": true,
 						"sortable": true,
-						"exportable": true,
 						"input": "text",
 						"input_template": "",
 						"input_group_class": "",
+						"input_items": [],
 						"lookup_query_name": "",
+						"lookup_query_params": [],
 						"lookup_key": "",
 						"lookup_field": "",
 						"display_helper": "",
 						"array_item_type": "",
+						"crud_fields": [],
 						"crud_insert_title": "",
 						"file_collection": "",
 						"file_container": "",
 						"join_collection": "",
+						"join_collection_field": "",
 						"join_container": "",
 						"join_fields": [],
 						"show_in_dataview": true,
 						"show_in_insert_form": true,
 						"show_in_update_form": true,
-						"show_in_read_only_form": true,
-						"input_items": [],
-						"lookup_query_params": [],
-						"crud_fields": [],
-						"join_collection_field": ""
+						"show_in_read_only_form": true
 					},
 					{
 						"name": "zipCode",
-						"title": "",
+						"title": "{{_ 'zipCode'}}",
 						"type": "string",
+						"exportable": true,
 						"default": "",
 						"min": "",
 						"max": "",
@@ -228,34 +233,34 @@
 						"format": "",
 						"searchable": true,
 						"sortable": true,
-						"exportable": true,
 						"input": "text",
 						"input_template": "",
 						"input_group_class": "",
+						"input_items": [],
 						"lookup_query_name": "",
+						"lookup_query_params": [],
 						"lookup_key": "",
 						"lookup_field": "",
 						"display_helper": "",
 						"array_item_type": "",
+						"crud_fields": [],
 						"crud_insert_title": "",
 						"file_collection": "",
 						"file_container": "",
 						"join_collection": "",
+						"join_collection_field": "",
 						"join_container": "",
 						"join_fields": [],
 						"show_in_dataview": true,
 						"show_in_insert_form": true,
 						"show_in_update_form": true,
-						"show_in_read_only_form": true,
-						"input_items": [],
-						"lookup_query_params": [],
-						"crud_fields": [],
-						"join_collection_field": ""
+						"show_in_read_only_form": true
 					},
 					{
 						"name": "name2",
-						"title": "Name2",
+						"title": "{{_ 'name2'}}",
 						"type": "string",
+						"exportable": true,
 						"default": "",
 						"min": "",
 						"max": "",
@@ -263,34 +268,34 @@
 						"format": "",
 						"searchable": true,
 						"sortable": true,
-						"exportable": true,
 						"input": "text",
 						"input_template": "",
 						"input_group_class": "",
+						"input_items": [],
 						"lookup_query_name": "",
+						"lookup_query_params": [],
 						"lookup_key": "",
 						"lookup_field": "",
 						"display_helper": "",
 						"array_item_type": "",
+						"crud_fields": [],
 						"crud_insert_title": "",
 						"file_collection": "",
 						"file_container": "",
 						"join_collection": "",
+						"join_collection_field": "",
 						"join_container": "",
 						"join_fields": [],
 						"show_in_dataview": true,
 						"show_in_insert_form": true,
 						"show_in_update_form": true,
-						"show_in_read_only_form": true,
-						"input_items": [],
-						"lookup_query_params": [],
-						"crud_fields": [],
-						"join_collection_field": ""
+						"show_in_read_only_form": true
 					},
 					{
 						"name": "city",
-						"title": "City",
+						"title": "{{_ 'city'}}",
 						"type": "string",
+						"exportable": true,
 						"default": "",
 						"min": "",
 						"max": "",
@@ -298,34 +303,34 @@
 						"format": "",
 						"searchable": true,
 						"sortable": true,
-						"exportable": true,
 						"input": "text",
 						"input_template": "",
 						"input_group_class": "",
+						"input_items": [],
 						"lookup_query_name": "",
+						"lookup_query_params": [],
 						"lookup_key": "",
 						"lookup_field": "",
 						"display_helper": "",
 						"array_item_type": "",
+						"crud_fields": [],
 						"crud_insert_title": "",
 						"file_collection": "",
 						"file_container": "",
 						"join_collection": "",
+						"join_collection_field": "",
 						"join_container": "",
 						"join_fields": [],
 						"show_in_dataview": true,
 						"show_in_insert_form": true,
 						"show_in_update_form": true,
-						"show_in_read_only_form": true,
-						"input_items": [],
-						"lookup_query_params": [],
-						"crud_fields": [],
-						"join_collection_field": ""
+						"show_in_read_only_form": true
 					},
 					{
 						"name": "yTunnus",
-						"title": "Y-tunnus",
+						"title": "{{_ 'yTunnus'}}",
 						"type": "string",
+						"exportable": true,
 						"default": "",
 						"min": "",
 						"max": "",
@@ -333,34 +338,34 @@
 						"format": "",
 						"searchable": true,
 						"sortable": true,
-						"exportable": true,
 						"input": "text",
 						"input_template": "",
 						"input_group_class": "",
+						"input_items": [],
 						"lookup_query_name": "",
+						"lookup_query_params": [],
 						"lookup_key": "",
 						"lookup_field": "",
 						"display_helper": "",
 						"array_item_type": "",
+						"crud_fields": [],
 						"crud_insert_title": "",
 						"file_collection": "",
 						"file_container": "",
 						"join_collection": "",
+						"join_collection_field": "",
 						"join_container": "",
 						"join_fields": [],
 						"show_in_dataview": true,
 						"show_in_insert_form": true,
 						"show_in_update_form": true,
-						"show_in_read_only_form": true,
-						"input_items": [],
-						"lookup_query_params": [],
-						"crud_fields": [],
-						"join_collection_field": ""
+						"show_in_read_only_form": true
 					},
 					{
 						"name": "mobilePhoneNumber",
-						"title": "Mobile Phone Number",
+						"title": "{{_ 'mobilePhoneNumber'}}",
 						"type": "string",
+						"exportable": true,
 						"default": "",
 						"min": "",
 						"max": "",
@@ -368,64 +373,28 @@
 						"format": "",
 						"searchable": true,
 						"sortable": true,
-						"exportable": true,
 						"input": "text",
 						"input_template": "",
 						"input_group_class": "",
+						"input_items": [],
 						"lookup_query_name": "",
+						"lookup_query_params": [],
 						"lookup_key": "",
 						"lookup_field": "",
 						"display_helper": "",
 						"array_item_type": "",
+						"crud_fields": [],
 						"crud_insert_title": "",
 						"file_collection": "",
 						"file_container": "",
 						"join_collection": "",
+						"join_collection_field": "",
 						"join_container": "",
 						"join_fields": [],
 						"show_in_dataview": true,
 						"show_in_insert_form": true,
 						"show_in_update_form": true,
-						"show_in_read_only_form": true,
-						"input_items": [],
-						"lookup_query_params": [],
-						"crud_fields": [],
-						"join_collection_field": ""
-					},
-					{
-						"name": "email",
-						"title": "Email",
-						"type": "string",
-						"default": "",
-						"min": "",
-						"max": "",
-						"required": false,
-						"format": "",
-						"searchable": true,
-						"sortable": true,
-						"exportable": true,
-						"input": "text",
-						"input_template": "",
-						"input_group_class": "",
-						"lookup_query_name": "",
-						"lookup_key": "",
-						"lookup_field": "",
-						"display_helper": "",
-						"array_item_type": "",
-						"crud_insert_title": "",
-						"file_collection": "",
-						"file_container": "",
-						"join_collection": "",
-						"join_container": "",
-						"join_fields": [],
-						"show_in_dataview": true,
-						"show_in_insert_form": true,
-						"show_in_update_form": true,
-						"show_in_read_only_form": true,
-						"input_items": [],
-						"lookup_query_params": [],
-						"crud_fields": [],
-						"join_collection_field": ""
+						"show_in_read_only_form": true
 					}
 				],
 				"owner_field": "ownerId",
@@ -459,7 +428,7 @@
 				"fields": [
 					{
 						"name": "invoiceNumber",
-						"title": "Invoice number",
+						"title": "{{_ 'invoiceNumber'}}",
 						"default": "{{nextInvoiceNumber}}",
 						"required": true,
 						"exportable": true,
@@ -494,9 +463,9 @@
 					},
 					{
 						"name": "date",
-						"title": "Invoice date",
+						"title": "{{_ 'date'}}",
 						"type": "date",
-						"format": "MM-DD-YYYY",
+						"format": "DD.MM.YYYY",
 						"input": "datepicker",
 						"default": "today",
 						"required": true,
@@ -529,7 +498,7 @@
 					},
 					{
 						"name": "customerId",
-						"title": "Customer",
+						"title": "{{_ 'customerId'}}",
 						"required": true,
 						"input": "select",
 						"lookup_query_name": "customer_list",
@@ -537,7 +506,6 @@
 						"lookup_key": "_id",
 						"show_in_dataview": false,
 						"show_in_read_only_form": false,
-						"exportable": false,
 						"join_collection": "customers",
 						"join_fields": [
 							"name"
@@ -550,6 +518,7 @@
 						"format": "",
 						"searchable": true,
 						"sortable": true,
+						"exportable": false,
 						"input_template": "",
 						"input_group_class": "",
 						"input_items": [],
@@ -566,7 +535,7 @@
 					},
 					{
 						"name": "customer.name",
-						"title": "Customer",
+						"title": "{{_ 'customer_name'}}",
 						"show_in_insert_form": false,
 						"show_in_update_form": false,
 						"exportable": true,
@@ -601,7 +570,7 @@
 					},
 					{
 						"name": "totalAmount",
-						"title": "Total",
+						"title": "{{_ 'totalAmount'}}",
 						"type": "float",
 						"show_in_insert_form": false,
 						"show_in_update_form": false,
@@ -632,6 +601,111 @@
 						"join_container": "",
 						"join_fields": [],
 						"show_in_dataview": true,
+						"show_in_read_only_form": true
+					},
+					{
+						"name": "dueDate",
+						"title": "{{_ 'dueDate'}}",
+						"type": "date",
+						"format": "DD.MM.YYYY",
+						"exportable": true,
+						"input": "datepicker",
+						"default": "",
+						"min": "",
+						"max": "",
+						"required": false,
+						"searchable": true,
+						"sortable": true,
+						"input_template": "",
+						"input_group_class": "",
+						"input_items": [],
+						"lookup_query_name": "",
+						"lookup_query_params": [],
+						"lookup_key": "",
+						"lookup_field": "",
+						"display_helper": "",
+						"array_item_type": "",
+						"crud_fields": [],
+						"crud_insert_title": "",
+						"file_collection": "",
+						"file_container": "",
+						"join_collection": "",
+						"join_collection_field": "",
+						"join_container": "",
+						"join_fields": [],
+						"show_in_dataview": true,
+						"show_in_insert_form": true,
+						"show_in_update_form": true,
+						"show_in_read_only_form": true
+					},
+					{
+						"name": "ourReference",
+						"title": "{{_ 'ourReference'}}",
+						"type": "string",
+						"exportable": true,
+						"default": "",
+						"min": "",
+						"max": "",
+						"required": false,
+						"format": "",
+						"searchable": true,
+						"sortable": true,
+						"input": "text",
+						"input_template": "",
+						"input_group_class": "",
+						"input_items": [],
+						"lookup_query_name": "",
+						"lookup_query_params": [],
+						"lookup_key": "",
+						"lookup_field": "",
+						"display_helper": "",
+						"array_item_type": "",
+						"crud_fields": [],
+						"crud_insert_title": "",
+						"file_collection": "",
+						"file_container": "",
+						"join_collection": "",
+						"join_collection_field": "",
+						"join_container": "",
+						"join_fields": [],
+						"show_in_dataview": true,
+						"show_in_insert_form": true,
+						"show_in_update_form": true,
+						"show_in_read_only_form": true
+					},
+					{
+						"name": "yourReference",
+						"title": "{{_ 'yourReference'}}",
+						"type": "string",
+						"exportable": true,
+						"default": "",
+						"min": "",
+						"max": "",
+						"required": false,
+						"format": "",
+						"searchable": true,
+						"sortable": true,
+						"input": "text",
+						"input_template": "",
+						"input_group_class": "",
+						"input_items": [],
+						"lookup_query_name": "",
+						"lookup_query_params": [],
+						"lookup_key": "",
+						"lookup_field": "",
+						"display_helper": "",
+						"array_item_type": "",
+						"crud_fields": [],
+						"crud_insert_title": "",
+						"file_collection": "",
+						"file_container": "",
+						"join_collection": "",
+						"join_collection_field": "",
+						"join_container": "",
+						"join_fields": [],
+						"show_in_dataview": true,
+						"show_in_insert_form": true,
+						"show_in_update_form": true,
 						"show_in_read_only_form": true
 					}
 				],
@@ -666,7 +740,7 @@
 				"fields": [
 					{
 						"name": "description",
-						"title": "Description",
+						"title": "{{_ 'description'}}",
 						"required": true,
 						"exportable": true,
 						"type": "string",
@@ -701,7 +775,7 @@
 					},
 					{
 						"name": "quantity",
-						"title": "Quantity",
+						"title": "{{_ 'quantity'}}",
 						"type": "float",
 						"default": 1,
 						"required": true,
@@ -736,11 +810,11 @@
 					},
 					{
 						"name": "price",
-						"title": "Price",
+						"title": "{{_ 'price'}}",
 						"type": "float",
-						"default": 0,
 						"required": true,
 						"exportable": true,
+						"default": "",
 						"min": "",
 						"max": "",
 						"format": "",
@@ -771,7 +845,7 @@
 					},
 					{
 						"name": "amount",
-						"title": "Amount",
+						"title": "{{_ 'amount'}}",
 						"type": "float",
 						"show_in_insert_form": false,
 						"show_in_update_form": false,
@@ -802,6 +876,62 @@
 						"join_container": "",
 						"join_fields": [],
 						"show_in_dataview": true,
+						"show_in_read_only_form": true
+					},
+					{
+						"name": "vat",
+						"title": "{{_ 'vat'}}",
+						"type": "string",
+						"required": true,
+						"exportable": true,
+						"input": "select",
+						"input_items": [
+							{
+								"value": "null",
+								"title": "{{_ 'ALV'}}"
+							},
+							{
+								"value": "24",
+								"title": "24%"
+							},
+							{
+								"value": "14",
+								"title": "14%"
+							},
+							{
+								"value": "10",
+								"title": "10%"
+							},
+							{
+								"value": "0",
+								"title": "0%"
+							}
+						],
+						"default": "",
+						"min": "",
+						"max": "",
+						"format": "",
+						"searchable": true,
+						"sortable": true,
+						"input_template": "",
+						"input_group_class": "",
+						"lookup_query_name": "",
+						"lookup_query_params": [],
+						"lookup_key": "",
+						"lookup_field": "",
+						"display_helper": "",
+						"array_item_type": "",
+						"crud_fields": [],
+						"crud_insert_title": "",
+						"file_collection": "",
+						"file_container": "",
+						"join_collection": "",
+						"join_collection_field": "",
+						"join_container": "",
+						"join_fields": [],
+						"show_in_dataview": true,
+						"show_in_insert_form": true,
+						"show_in_update_form": true,
 						"show_in_read_only_form": true
 					}
 				],
@@ -836,7 +966,6 @@
 			{
 				"name": "customer_list",
 				"collection": "customers",
-				"filter": {},
 				"options": {
 					"transform": "function(doc) { var sum = 0; Invoices.find({ customerId: doc._id }).map(function(item) { if(item.totalAmount) sum += item.totalAmount; }); doc.totalAmount = sum; return doc; }",
 					"sort": [
@@ -849,7 +978,8 @@
 						"params": []
 					}
 				],
-				"find_one": false
+				"find_one": false,
+				"filter": {}
 			},
 			{
 				"name": "customers_empty",
@@ -881,7 +1011,6 @@
 			{
 				"name": "invoice_list",
 				"collection": "invoices",
-				"filter": {},
 				"options": {
 					"sort": [
 						[
@@ -891,6 +1020,7 @@
 					]
 				},
 				"find_one": false,
+				"filter": {},
 				"related_queries": []
 			},
 			{
@@ -899,14 +1029,14 @@
 				"filter": {
 					"_id": null
 				},
-				"options": {},
 				"find_one": true,
 				"related_queries": [
 					{
 						"name": "invoice_list",
 						"params": []
 					}
-				]
+				],
+				"options": {}
 			},
 			{
 				"name": "invoice_details",
@@ -963,14 +1093,14 @@
 			"pages": [
 				{
 					"name": "home_public",
-					"title": "",
+					"title": "{{_ 'home_public'}}",
 					"components": [
 						{
 							"name": "home_jumbotron",
-							"title": "Example application",
+							"title": "{{_ 'home_jumbotron'}}",
 							"type": "jumbotron",
-							"text": "<b>This <a href=\"https://www.meteor.com\" target=\"_blank\">Meteor</a> application is made with <a href=\"http://www.meteorkitchen.com\" target=\"_blank\">meteor-kitchen</a> without manual coding.</b><br />It shows how to work with DataViews, Forms with dates and lookup fields, master-detail relations etc.<br />Source code (input file for generator) is <a href=\"https://github.com/perak/kitchen-examples/tree/master/example-invoices\" target=\"_blank\">here</a>.",
-							"button_title": "Continue &raquo;",
+							"text": "{{{_ 'home_jumbotron_text'}}}",
+							"button_title": "{{{_ 'home_jumbotron_button'}}}",
 							"button_route": "login",
 							"dest_selector": "",
 							"dest_position": "",
@@ -1154,7 +1284,7 @@
 					"dest_selector": "#menu",
 					"items": [
 						{
-							"title": "Home",
+							"title": "{{_ 'home'}}",
 							"route": "home_public",
 							"route_params": [],
 							"url": "",
@@ -1184,7 +1314,7 @@
 					"dest_selector": "#menu",
 					"items": [
 						{
-							"title": "Register",
+							"title": "{{_ 'register'}}",
 							"route": "register",
 							"route_params": [],
 							"url": "",
@@ -1195,8 +1325,19 @@
 							"items": []
 						},
 						{
-							"title": "Login",
+							"title": "{{_ 'login'}}",
 							"route": "login",
+							"route_params": [],
+							"url": "",
+							"target": "",
+							"class": "",
+							"items_container_class": "",
+							"icon_class": "",
+							"items": []
+						},
+						{
+							"title": "{{> i18n_buttons}} ",
+							"route": "",
 							"route_params": [],
 							"url": "",
 							"target": "",
@@ -1229,8 +1370,8 @@
 			"pages": [
 				{
 					"name": "home_private",
-					"title": "Welcome {{userFullName}}!",
-					"text": "Place for dashboard here...",
+					"title": "{{_ 'home_private'  userFullName}}",
+					"text": "{{_ 'home_private_text'}}",
 					"type": "page",
 					"template": "",
 					"custom_template": "",
@@ -1265,7 +1406,7 @@
 						{
 							"name": "view",
 							"type": "data_view",
-							"title": "Customers",
+							"title": "{{_ 'customers'}}",
 							"text_if_empty": "No customers :(",
 							"query_name": "customer_list",
 							"insert_route": "customers.insert",
@@ -1309,7 +1450,7 @@
 									"name": "insert_form",
 									"type": "form",
 									"mode": "insert",
-									"title": "New customer",
+									"title": "{{_ 'new_customer'}}",
 									"query_name": "customers_empty",
 									"submit_route": "customers",
 									"cancel_route": "customers",
@@ -1374,7 +1515,7 @@
 									"name": "details_form",
 									"type": "form",
 									"mode": "read_only",
-									"title": "Details",
+									"title": "{{_ 'customer_details'}}",
 									"query_name": "customer_details",
 									"close_route": "customers",
 									"back_route": "customers",
@@ -1438,7 +1579,7 @@
 									"name": "edit_form",
 									"type": "form",
 									"mode": "update",
-									"title": "Edit customer",
+									"title": "{{_ 'edit_customer'}}",
 									"submit_route": "customers",
 									"cancel_route": "customers",
 									"query_name": "customer_details",
@@ -1527,7 +1668,7 @@
 						{
 							"name": "view",
 							"type": "data_view",
-							"title": "Invoices",
+							"title": "{{_ 'invoices'}}",
 							"text_if_empty": "No invoices :(",
 							"query_name": "invoice_list",
 							"insert_route": "invoices.insert",
@@ -1571,7 +1712,7 @@
 									"name": "insert_form",
 									"type": "form",
 									"mode": "insert",
-									"title": "New invoice",
+									"title": "{{_ 'new_invoice'}}",
 									"query_name": "invoices_empty",
 									"helpers_code": "'nextInvoiceNumber': function() { var max = 0; var invoiceNumbers = Invoices.find({}, { fields: { invoiceNumber: 1 }}).fetch(); _.each(invoiceNumbers, function(doc) { var intNum = parseInt(doc.invoiceNumber); if(!isNaN(intNum) && intNum > max) max = intNum; }); return max + 1; }",
 									"submit_route": "invoices.details",
@@ -1642,7 +1783,7 @@
 									"name": "details_form",
 									"type": "form",
 									"mode": "read_only",
-									"title": "Invoice #{{invoice_details.invoiceNumber}}",
+									"title": "{{_ 'invoice_details' invoice_details.invoiceNumber }}",
 									"layout": "horizontal",
 									"query_name": "invoice_details",
 									"back_route": "invoices",
@@ -1752,7 +1893,7 @@
 											"name": "insert_form",
 											"type": "form",
 											"mode": "insert",
-											"title": "Add item",
+											"title": "{{_ 'invoice_add_item'}}",
 											"query_name": "invoice_items_empty",
 											"hidden_fields": [
 												{
@@ -1832,7 +1973,7 @@
 											"name": "edit_form",
 											"type": "form",
 											"mode": "update",
-											"title": "Edit item",
+											"title": "{{_ 'invoice_edit_detail'}}",
 											"query_name": "invoice_item",
 											"submit_route": "invoices.details",
 											"submit_route_params": [
@@ -1932,7 +2073,7 @@
 									"name": "edit_form",
 									"type": "form",
 									"mode": "update",
-									"title": "Edit invoice",
+									"title": "{{_ 'invoice_edit'}}",
 									"submit_route": "invoices",
 									"cancel_route": "invoices",
 									"query_name": "invoice_details",
@@ -2022,16 +2163,28 @@
 							"name": "profile",
 							"components": [
 								{
+									"name": "locale",
+									"html": "<h2>{{ _ 'Choose language'}}</h2>\n{{> i18n_buttons}}",
+									"type": "custom_component",
+									"custom_template": "",
+									"js": "",
+									"dest_selector": "",
+									"dest_position": "",
+									"query_name": "",
+									"query_params": [],
+									"components": []
+								},
+								{
 									"name": "edit_form",
 									"type": "form",
 									"mode": "update",
-									"title": "Edit your profile",
+									"title": "{{_ 'profile_edit'}}",
 									"submit_route": "user_settings.profile",
 									"query_name": "current_user_data",
 									"fields": [
 										{
 											"name": "profile.name",
-											"title": "Name",
+											"title": "{{_ 'profile.name'}}",
 											"required": true,
 											"type": "string",
 											"default": "",
@@ -2066,7 +2219,7 @@
 										},
 										{
 											"name": "profile.email",
-											"title": "E-mail",
+											"title": "{{_ 'profile.email'}}",
 											"type": "email",
 											"required": true,
 											"default": "",
@@ -2101,7 +2254,7 @@
 										},
 										{
 											"name": "profile.facebook",
-											"title": "Facebook URL",
+											"title": "{{_ 'profile.facebook'}}",
 											"type": "string",
 											"default": "",
 											"min": "",
@@ -2136,7 +2289,7 @@
 										},
 										{
 											"name": "profile.google",
-											"title": "Google+ URL",
+											"title": "{{_ 'profile.google'}}",
 											"type": "string",
 											"default": "",
 											"min": "",
@@ -2171,7 +2324,7 @@
 										},
 										{
 											"name": "profile.twitter",
-											"title": "Twitter ID",
+											"title": "{{_ 'profile.twitter'}}",
 											"type": "string",
 											"default": "",
 											"min": "",
@@ -2206,7 +2359,7 @@
 										},
 										{
 											"name": "profile.website",
-											"title": "Website URL",
+											"title": "{{_ 'profile.website'}}",
 											"type": "string",
 											"default": "",
 											"min": "",
@@ -2331,7 +2484,7 @@
 							"class": "nav nav-stacked nav-pills",
 							"items": [
 								{
-									"title": "Profile",
+									"title": "{{_ 'profile_title'}}",
 									"route": "user_settings.profile",
 									"route_params": [],
 									"url": "",
@@ -2342,7 +2495,7 @@
 									"items": []
 								},
 								{
-									"title": "Change password",
+									"title": "{{_ 'change_pass'}}",
 									"route": "user_settings.change_pass",
 									"route_params": [],
 									"url": "",
@@ -2436,7 +2589,7 @@
 					"dest_selector": "#menu",
 					"items": [
 						{
-							"title": "Home",
+							"title": "{{_ 'home' }}",
 							"route": "home_private",
 							"route_params": [],
 							"url": "",
@@ -2447,7 +2600,7 @@
 							"items": []
 						},
 						{
-							"title": "Invoices",
+							"title": "{{_ 'invoices' }}",
 							"route": "invoices",
 							"route_params": [],
 							"url": "",
@@ -2458,7 +2611,7 @@
 							"items": []
 						},
 						{
-							"title": "Customers",
+							"title": "{{_ 'customers' }}",
 							"route": "customers",
 							"route_params": [],
 							"url": "",
@@ -2488,10 +2641,21 @@
 					"dest_selector": "#menu",
 					"items": [
 						{
+							"title": "{{> i18n_dropdown}}",
+							"route": "",
+							"route_params": [],
+							"url": "",
+							"target": "",
+							"class": "",
+							"items_container_class": "",
+							"icon_class": "",
+							"items": []
+						},
+						{
 							"title": "{{userEmail}}",
 							"items": [
 								{
-									"title": "Settings",
+									"title": "{{_ 'user_settings'}}",
 									"route": "user_settings",
 									"route_params": [],
 									"url": "",
@@ -2502,7 +2666,7 @@
 									"items": []
 								},
 								{
-									"title": "Logout",
+									"title": "{{_ 'logout'}}",
 									"route": "logout",
 									"route_params": [],
 									"url": "",
@@ -2541,13 +2705,6 @@
 			"navbar_class": "",
 			"footer_class": ""
 		},
-		"meta_description": "",
-		"meta_title": "",
-		"frontend": "bootstrap3",
-		"footer_text": "",
-		"roles": [],
-		"default_role": "",
-		"use_collection2": false,
 		"free_zone": {
 			"type": "zone",
 			"components": [],
@@ -2557,6 +2714,31 @@
 			"navbar_class": "",
 			"footer_class": ""
 		},
+		"client_startup_code": "\n\ngetUserLanguage = function () {\n  // Put here the logic for determining the user language\n  var userLang = navigator.language || navigator.userLanguage;\n\n  return userLang;\n};\n\n\nSession.set(\"showLoadingIndicator\", true);\n\n    TAPi18n.setLanguage(getUserLanguage())\n      .done(function () {\n        Session.set(\"showLoadingIndicator\", false);\n      })\n      .fail(function (error_message) {\n        // Handle the situation\n        console.log(error_message);\n      });",
+		"copy_files": [
+			{
+				"source": "files/i18n/en.i18n.json",
+				"dest": "OUTPUT_DIR/i18n/en.i18n.json"
+			},
+			{
+				"source": "files/i18n/fi.i18n.json",
+				"dest": "OUTPUT_DIR/i18n/fi.i18n.json"
+			}
+		],
+		"packages": {
+			"meteor": [
+				"tap:i18n",
+				"tap:i18n-ui"
+			],
+			"mrt": []
+		},
+		"meta_description": "",
+		"meta_title": "",
+		"frontend": "bootstrap3",
+		"footer_text": "",
+		"roles": [],
+		"default_role": "",
+		"use_collection2": false,
 		"login_with_password": true,
 		"send_verification_email": false,
 		"login_with_google": false,
@@ -2566,18 +2748,12 @@
 		"login_with_twitter": false,
 		"login_with_meteor": false,
 		"server_startup_code": "",
-		"client_startup_code": "",
 		"on_user_logged_code": "",
 		"server_startup_source_file": "",
 		"client_startup_source_file": "",
 		"on_user_created_source_file": "",
 		"on_user_logged_source_file": "",
 		"server_side_routes": [],
-		"copy_files": [],
-		"packages": {
-			"meteor": [],
-			"mrt": []
-		},
 		"router_config": {}
 	}
 }
