@@ -1,5 +1,5 @@
 {
-    dueDate_format: "DD.MM.YYYY",
+    "dueDate_format": "DD.MM.YYYY",
     "title": "Laskuni",
     "home": "Etusivu",
     "invoices":  "Laskut",

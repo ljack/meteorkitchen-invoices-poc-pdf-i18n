@@ -1807,6 +1807,18 @@
 									"back_route_params": [],
 									"fields": [],
 									"hidden_fields": []
+								},
+								{
+									"name": "printPdf ",
+									"custom_template": "",
+									"html": "<template name=\"TEMPLATE_NAME\">\n  \n<button type=\"submit\" id=\"printPdf\" class=\"printPdf button button-primary\">\n  <span class=\"fa fa-print\">Print to PDF</span>\n</button>\n\n</template>",
+									"js": "Template.TEMPLATE_NAME.events({\n\t\t\"click #printPdf\": function(e, t) {\n\t\te.preventDefault();\n\n\t\tconsole.log(\"Printing...\",this);\n        printPdf(this);\n\t}\n});",
+									"dest_selector": "",
+									"dest_position": "",
+									"query_name": "",
+									"type": "custom_component",
+									"query_params": [],
+									"components": []
 								}
 							],
 							"force_yield_subpages": true,
@@ -2723,12 +2735,17 @@
 			{
 				"source": "files/i18n/fi.i18n.json",
 				"dest": "OUTPUT_DIR/i18n/fi.i18n.json"
+			},
+			{
+				"source": "files/printPdf.js",
+				"dest": "CLIENT_DIR/printPdf.js"
 			}
 		],
 		"packages": {
 			"meteor": [
 				"tap:i18n",
-				"tap:i18n-ui"
+				"tap:i18n-ui",
+				"nilsdannemann:pdfmake"
 			],
 			"mrt": []
 		},
