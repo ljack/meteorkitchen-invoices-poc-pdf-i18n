@@ -195,7 +195,7 @@ lasku_2 = function(data) {
 		height: 30,
 		width: 1,
 		format: "CODE128C",
-		displayValue: true,
+		displayValue: false,
 		fontSize: 10
 	});
 
@@ -204,10 +204,26 @@ lasku_2 = function(data) {
 
 	let penaltyInterest = "13 %";
 	let currency = "EUR";
+	let companyHomepage = " www ";
 
 	var docDefinition = {
 		pageSize: 'A4',
 		pageMargins: [50, 25, 50, 25],
+		header: function(currentPage, pageCount) {
+			return {
+			
+				alignment: "right",
+				text: t("Sivu") + currentPage.toString() + ' ( ' + pageCount + " ) "
+			};
+		},
+		footer: {
+			alignment: "center",
+			fontSize: 8,
+			text: t("Puh") + " " + companyPhone + " " + t("Y-tunnus") + " " + companyVATCode + " " +
+				t("Kotipaikka") + " " + companyHomeplace + "\n" + t("email") + " " + companyEmail +
+				" " + t("Kotisivut") + " " + companyHomepage
+
+		},
 
 		// Content with styles 
 		content: [{
@@ -297,9 +313,10 @@ lasku_2 = function(data) {
 					}],
 					style: ['listItem']
 				}]
-			}, "\n\n\n", {
+			}, line, "\n\n\n", {
 				margin: [0, 0, 0, 0],
 				bold: true,
+				widths: ['auto','auto','30%'],
 				columns: [{
 					stack: [t("Pankki"), "Nordea"]
 				}, {
@@ -309,11 +326,16 @@ lasku_2 = function(data) {
 				}],
 				columnGap: 10
 			}, "\n\n\n", {
-				columns: [t("Eräpäivä"), currency, totalAmount, t("Viitenumero"), paymentReferenceNumber]
+				bold: true,
+				columns: [t("Eräpäivä"), dueDate, currency, formatEur(totalAmount), { width: "auto", text:t("Viitenumero")}, paymentReferenceNumber],
+				margin: [10,10]
 			},
 			"\n\n\n", {
 				image: virtualbarcode,
+				alignment: "center"
+			}, {
 				text: virtualBarcode,
+				fontSize: 10,
 				alignment: "center"
 			}
 
