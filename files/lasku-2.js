@@ -228,17 +228,18 @@ lasku_2 = function(data) {
 		// Content with styles 
 		content: [{
 				columns: [{
-					width: "50%",
+					width: "70%",
 					text: companyName,
 					style: 'headline'
 				}, {
+					width: "20%",
 					text: t("Lasku"),
 					fontSize: 18,
 					bold: true
 				}]
 			}, {
 				columns: [{
-					width: '50%',
+					width: '70%',
 					style: ['listItem'],
 					stack: [
 						companyName,
@@ -253,7 +254,7 @@ lasku_2 = function(data) {
 					]
 				}, {
 					width: '20%',
-					alignment: "right",
+					alignment: "left",
 					stack: [t("Päivämäärä"), "\n", t("Laskunumero"), "\n", t("Asiakastunnus"), t("Maksuehto"), t("Viivästyskorko"), t("Valuutta")],
 					style: ['listItem']
 
@@ -309,7 +310,7 @@ lasku_2 = function(data) {
 						}]
 					}, {
 						width: "*",
-						stack: [formatEur(totalAmountWithoutVat), formatEur(vatTotal), formatEur(totalAmount)]
+						stack: [formatEur(totalAmountWithoutVat), formatEur(vatTotal), { bold:true, text:formatEur(totalAmount) }]
 					}],
 					style: ['listItem']
 				}]
