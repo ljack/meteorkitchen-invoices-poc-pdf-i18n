@@ -11,9 +11,9 @@
     "dueDate": "Due Date",
     "ourReference": "Our reference",
     "yourReference": "Your reference",
-    "home_private": "Welcome %s!",
-    "home_private_text": "This is simple Invoices -application written in MeteorKitchen",
-
+   "home_private": "<div class='ui inverted raised segment'>Welcome to Invoices, %s.</div>",
+    "home_private_text": "<div class='ui raised segment'><b>Invoices</b> -app allows you to create invoices for your customers. First you need to create a company who is invoicing. Then create a customer. And for the invoice you'll choose a company and a customer.</div>",
+ 
     "change_pass": "Change password",
     "ALV": "VAT",
     "home": "Home",
@@ -69,7 +69,7 @@
     "OK": "OK",
     "home_public": "Invoices",
     "home_jumbotron": "Invoices ",
-    "home_jumbotron_text": "<b>This <a href=\"https://www.meteor.com\" target=\"_blank\">Meteor</a> application is made with <a href=\"http://www.meteorkitchen.com\" target=\"_blank\">meteor-kitchen</a> without manual coding.</b><br />It shows how to work with DataViews, Forms with dates and lookup fields, master-detail relations etc.<br />Source code (input file for generator) is <a href=\"https://github.com/perak/kitchen-examples/tree/master/example-invoices\" target=\"_blank\">here</a>.",
+    "home_jumbotron_text": "<b>This <a href=\"https://www.meteor.com\" target=\"_blank\">Meteor</a> application is made with <a href=\"http://www.meteorkitchen.com\" target=\"_blank\">meteor-kitchen</a> without manual coding.</b><br/>With it you can create invoices for multiple customers from multiple companies. Invoices can be printed as PDF files to be sent to the customer.",
     "home_jumbotron_button": "Continue &raquo;",
     "Please sign in": "Please sign in",
     "Not a member?": "Not a member?",
@@ -83,7 +83,7 @@
     "Password": "Password",
     "Already a member?": "Already a member?",
     "Sign in here": "Sign in here",
-    "thanks_for_signup": "<h2>Thanks for regisgterin</h2><br/><p>We've sent confirmation email to your email address.</p>",
+    "thanks_for_signup": "<h2>Thanks for registering.</h2><br/><p>We've sent confirmation email to your email address.</p>",
     "forgot_password_sent": "<h2>Password reset information sent</h2><br/><p>Check your email. We've sent you information how to reset your password.</p>",
     "Forgot password": "Forgot password",
     "Submit": "Submit",
@@ -114,6 +114,11 @@
     "Viitteemme":"Our reference",
     "Viitteenne":"Your reference",
     "Toimitusaika": "Delivery time",
-    "Puhelin": "Phone"
+    "Puhelin": "Phone",
+    "vatCode":"VAT Code",
+    "homeplace":"Homeplace",
+    "streetAddress2": "Address 2",
+    "phoneNumber": "Phone",
+    "Print to PDF2": "Print PDF 2"
 
 }

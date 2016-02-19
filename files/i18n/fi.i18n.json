@@ -11,9 +11,9 @@
     "dueDate": "Eräpäivä",
     "ourReference": "Viitteemme",
     "yourReference": "Viitteenne",
-    "home_private": "Tervetuloa Laskuni-sovellukseen.",
-    "home_private_text": "Tällä sovelluksellä on mahdollista kirjoittaa laskuja ja tulostaa ne PDF-muotoisina.",
-
+    "home_private": "<div class='ui inverted raised segment'>%s, tervetuloa Laskut-sovellukseen.</div>",
+    "home_private_text": "<div class='ui raised segment'><b>Laskut</b> -sovelluksellä voi kirjoittaa laskuja ja tulostaa ne PDF-muotoisina. Luo ensin yritys jolta haluat laskuttaa. Tämän jälkeen luo asiakas. Laskulle valitaan yritys ja asiakas.</div>",
+ 
     "change_pass": "Vaihda salasana",
     "ALV": "ALV",
     "home": "Etusivu",
@@ -67,9 +67,9 @@
     "Your old password": "Nykyinen salasana",
     "Please wait...": "Odota...",
     "OK": "OK",
-    "home_public": "Laskuni sovellus",
-    "home_jumbotron": "Laskuni sovellus",
-    "home_jumbotron_text": "Tämä on Laskuni sovellus. Sen avulla voi kirjoittaa laskuja sekä tulostaa niitä PDF-muodossa",
+    "home_public": "Laskut-sovellus",
+    "home_jumbotron": "Laskut-sovellus",
+    "home_jumbotron_text": "Tämä on Laskut-sovellus. Sen avulla voi kirjoittaa laskuja sekä tulostaa niitä PDF-muodossa",
     "home_jumbotron_button": "Jatka &raquo;",
     "Please sign in": "Kirjaudu sisään",
     "Not a member?": "Ei tunnuksia?",
@@ -114,5 +114,10 @@
     "Viitteemme": "Viitteemme",
     "Viitteenne": "Viitteenne",
     "Toimitusaika": "Toimitusaika",
-    "Puhelin": "Puhelin"
+    "Puhelin": "Puhelin",
+    "vatCode": "Y-tunnus",
+    "homeplace": "Kotipaikka",
+    "streetAddress2": "Osoite 2",
+    "phoneNumber": "Puhelin",
+    "Print to PDF2": "Tulosta PDF 2"
 }
