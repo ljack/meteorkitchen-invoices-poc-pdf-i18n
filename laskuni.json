@@ -1935,11 +1935,11 @@
 								},
 								{
 									"title": "{{> i18n_buttons_semantic}} ",
+									"class": "small middle aligned content item compact",
 									"route": "",
 									"route_params": [],
 									"url": "",
 									"target": "",
-									"class": "small middle aligned content item compact",
 									"items_container_class": "",
 									"icon_class": "",
 									"items": []
@@ -2011,12 +2011,12 @@
 							"query_params": [],
 							"components": [],
 							"template_rendered_code": "",
-							"text_if_empty": "No data here",
+							"text_if_empty": "{{_ 'No Companies found'}}",
 							"text_if_not_found": "",
 							"delete_route": "",
 							"insert_route_params": [],
 							"delete_route_params": [],
-							"insert_button_title": "",
+							"insert_button_title": "{{_ 'Add new company'}}",
 							"views": [],
 							"fields": []
 						}
@@ -2279,7 +2279,7 @@
 							"name": "view",
 							"type": "data_view",
 							"title": "{{_ 'customers'}}",
-							"text_if_empty": "No customers :(",
+							"text_if_empty": "{{_ 'No customers found'}}",
 							"query_name": "customer_list",
 							"insert_route": "customers.insert",
 							"edit_route": "customers.edit",
@@ -2309,7 +2309,7 @@
 							"delete_route": "",
 							"insert_route_params": [],
 							"delete_route_params": [],
-							"insert_button_title": "",
+							"insert_button_title": "{{_ 'Add new customer'}}",
 							"views": [],
 							"fields": []
 						}
@@ -2541,7 +2541,7 @@
 							"name": "view",
 							"type": "data_view",
 							"title": "{{_ 'invoices'}}",
-							"text_if_empty": "No invoices :(",
+							"text_if_empty": "{{_ 'No invoices'}}",
 							"query_name": "invoice_list",
 							"insert_route": "invoices.insert",
 							"edit_route": "invoices.edit",
@@ -2571,7 +2571,7 @@
 							"delete_route": "",
 							"insert_route_params": [],
 							"delete_route_params": [],
-							"insert_button_title": "",
+							"insert_button_title": "{{_ 'Add new invoice'}}",
 							"views": [],
 							"fields": []
 						}
@@ -3365,7 +3365,7 @@
 						{
 							"name": "side_menu",
 							"type": "menu",
-							"class": "nav nav-stacked nav-pills",
+							"class": "ui menu vertical",
 							"items": [
 								{
 									"title": "{{_ 'profile_title'}}",
@@ -3400,7 +3400,7 @@
 							"query_params": [],
 							"components": [],
 							"template_rendered_code": "",
-							"items_container_class": "",
+							"items_container_class": "ui container ",
 							"scroll_spy_selector": ""
 						}
 					],
@@ -3475,10 +3475,10 @@
 						{
 							"title": "{{_ 'home' }}",
 							"route": "home_private",
-							"class": "",
 							"route_params": [],
 							"url": "",
 							"target": "",
+							"class": "",
 							"items_container_class": "",
 							"icon_class": "",
 							"items": []
@@ -3486,10 +3486,10 @@
 						{
 							"title": "{{_ 'invoices' }}",
 							"route": "invoices",
-							"class": "",
 							"route_params": [],
 							"url": "",
 							"target": "",
+							"class": "",
 							"items_container_class": "",
 							"icon_class": "",
 							"items": []
@@ -3497,10 +3497,10 @@
 						{
 							"title": "{{_ 'customers' }}",
 							"route": "customers",
-							"class": "",
 							"route_params": [],
 							"url": "",
 							"target": "",
+							"class": "",
 							"items_container_class": "",
 							"icon_class": "",
 							"items": []
@@ -3508,10 +3508,10 @@
 						{
 							"title": "{{_ 'companys'}}",
 							"route": "companys",
-							"class": "",
 							"route_params": [],
 							"url": "",
 							"target": "",
+							"class": "",
 							"items_container_class": "",
 							"icon_class": "",
 							"items": []
@@ -3610,7 +3610,7 @@
 			"navbar_class": "",
 			"footer_class": ""
 		},
-		"client_startup_code": "\n/* $.getScript('https://github.com/lindell/JsBarcode/releases/download/2.0-beta/JsBarcode.all.min.js', function(){\n  console.log(\"JsBarcode loaded\", JsBarcode );\n});\n*/\n\ngetUserLanguage = function () {\n  // Put here the logic for determining the user language\n  var userLang = navigator.language || navigator.userLanguage;\n\n  return userLang;\n};\n\n\nSession.set(\"showLoadingIndicator\", true);\n\n    TAPi18n.setLanguage(getUserLanguage())\n      .done(function () {\n        Session.set(\"showLoadingIndicator\", false);\n      })\n      .fail(function (error_message) {\n        // Handle the situation\n        console.log(error_message);\n      });",
+		"client_startup_code": "\nTemplate.registerHelper(\"showCurrentDateTime\", function () {\n    return moment().format();\n});\n\n/* $.getScript('https://github.com/lindell/JsBarcode/releases/download/2.0-beta/JsBarcode.all.min.js', function(){\n  console.log(\"JsBarcode loaded\", JsBarcode );\n});\n*/\n\ngetUserLanguage = function () {\n  // Put here the logic for determining the user language\n  var userLang = navigator.language || navigator.userLanguage;\n\n  return userLang;\n};\n\n\nSession.set(\"showLoadingIndicator\", true);\n\n    TAPi18n.setLanguage(getUserLanguage())\n      .done(function () {\n        Session.set(\"showLoadingIndicator\", false);\n      })\n      .fail(function (error_message) {\n        // Handle the situation\n        console.log(error_message);\n      });",
 		"copy_files": [
 			{
 				"source": "files/i18n/en.i18n.json",
@@ -3640,11 +3640,14 @@
 				"nilsdannemann:pdfmake",
 				"liyu:sprintfjs"
 			],
+			"npm": [
+				"pdfmake"
+			],
 			"mrt": []
 		},
 		"on_user_logged_code": "console.log(\"User logged in\",Meteor.user().profile.name);",
 		"frontend": "semantic-ui",
-		"footer_text": "<p>Made in Solar System with <i class=\"ui icon bug\"></i>and <i class=\"ui icon coffee\"></i></p>",
+		"footer_text": "This software comes with NO WARRANTIES. Use at your own risk. <i class=\"fa fa-bug\"></i> might be present.<br/><p> Page served <i class=\"fa fa-clock-o\"></i> {{showCurrentDateTime}}</p>",
 		"meta_description": "",
 		"meta_title": "",
 		"theme": "",
