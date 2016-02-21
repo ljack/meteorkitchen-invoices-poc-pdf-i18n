@@ -2003,7 +2003,7 @@
 							],
 							"dest_selector": "",
 							"dest_position": "",
-							"class": "tablet stackable compact",
+							"class": "tablet stackable compact ui collapsing table",
 							"title": "",
 							"title_icon_class": "",
 							"events_code": "",
