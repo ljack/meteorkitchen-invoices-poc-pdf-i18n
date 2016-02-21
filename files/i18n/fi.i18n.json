@@ -128,5 +128,6 @@
     "Delete? Are you sure?": "Poistetaan, oletko varma?",
     "Add new company": "Uusi yritys",
     "Add new customer": "Uusi asiakas",
-    "Add new invoice": "Uusi lasku"
+    "Add new invoice": "Uusi lasku",
+    "company_invoicee": "Laskuttaja yritys"
 }
