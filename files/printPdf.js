@@ -75,7 +75,7 @@ printPdf = function(data) {
 
 	// see https://github.com/lindell/JsBarcode
 
-	// console.log("printPdf...", data);
+	console.log("printPdf...", data);
 	// Define the pdf-document 
 
 
