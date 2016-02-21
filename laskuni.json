@@ -2003,7 +2003,7 @@
 							],
 							"dest_selector": "",
 							"dest_position": "",
-							"class": "",
+							"class": "tablet stackable compact",
 							"title": "",
 							"title_icon_class": "",
 							"events_code": "",
@@ -2028,7 +2028,7 @@
 							"components": [
 								{
 									"name": "insert_form",
-									"title": "New company",
+									"title": "{{_ 'Add new company'}}",
 									"query_name": "companys_empty",
 									"mode": "insert",
 									"submit_route": "companys",
