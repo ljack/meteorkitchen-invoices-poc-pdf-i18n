@@ -119,5 +119,14 @@
     "homeplace": "Kotipaikka",
     "streetAddress2": "Osoite 2",
     "phoneNumber": "Puhelin",
-    "Print to PDF2": "Tulosta PDF 2"
+    "Print to PDF2": "Tulosta PDF 2",
+    "Sign up": "Kirjaudu",
+    "No Companies found": "Yhtään laskuttaja yritystä ei löytynyt.",
+    "No customers found": "Yhtään asiakasta ei löytynyt.",
+    "No invoices": "Yhtään laskua ei löytynyt, luo yksi?",
+    "Page not found": "Sivua ei löytynyt",
+    "Delete? Are you sure?": "Poistetaan, oletko varma?",
+    "Add new company": "Uusi yritys",
+    "Add new customer": "Uusi asiakas",
+    "Add new invoice": "Uusi lasku"
 }

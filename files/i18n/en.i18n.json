@@ -119,6 +119,15 @@
     "homeplace":"Homeplace",
     "streetAddress2": "Address 2",
     "phoneNumber": "Phone",
-    "Print to PDF2": "Print PDF 2"
+    "Print to PDF2": "Print PDF 2",
+    "Sign up": "Sign up",
+    "No Companies found": "No Companies found",
+    "No customers found": "No Customers found",
+    "No invoices":"No Invoices found, go create one",
+    "Page not found": "Page not found",
+    "Delete? Are you sure?": "Delete? Are you sure?",
+    "Add new company": "Add new company",
+    "Add new customer": "Add new customer",
+    "Add new invoice": "Add new invoice"
 
 }

@@ -4,6 +4,8 @@
 URL="https://pim-ljack1.c9.io/api/getapp/json/R5JEv9qWLp255XEAo"
 
 function fetch {
+    git add laskuni.json
+    git commit -m "Autocommit"
     curl  $URL > laskuni.json
     meteor-kitchen ./laskuni.json laskuni
 }
