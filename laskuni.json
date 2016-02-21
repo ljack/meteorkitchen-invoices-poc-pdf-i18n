@@ -812,7 +812,7 @@
 					},
 					{
 						"name": "companyId",
-						"title": "{{_ 'companyId'}}",
+						"title": "{{_ 'company_invoicee'}}",
 						"type": "string",
 						"input": "select",
 						"lookup_query_name": "companys",
