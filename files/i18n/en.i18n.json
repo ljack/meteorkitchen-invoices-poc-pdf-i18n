@@ -129,6 +129,9 @@
     "Add new company": "Add new company",
     "Add new customer": "Add new customer",
     "Add new invoice": "Add new invoice",
-    "company_invoicee": "Invoicee Company"
+    "company_invoicee": "Invoicee Company",
+    "tos":  "Terms Of Service",
+    "tos_header": "Jos haluat käyttää tätä palvelua sinun täytyy hyväksyä nämä palvelut ehdot. Rekisteröitymällä käyttäjäksi hyväksyt palvelun käyttöehdot."
+    
 
 }

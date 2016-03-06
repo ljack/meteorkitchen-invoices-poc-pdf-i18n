@@ -129,5 +129,8 @@
     "Add new company": "Uusi yritys",
     "Add new customer": "Uusi asiakas",
     "Add new invoice": "Uusi lasku",
-    "company_invoicee": "Laskuttaja yritys"
+    "company_invoicee": "Laskuttaja yritys",
+    "tos":  "Palvelun käyttöehdot",
+    "tos_header": "Jos haluat käyttää tätä palvelua sinun täytyy hyväksyä nämä palvelut ehdot. Rekisteröitymällä käyttäjäksi hyväksyt palvelun käyttöehdot."
+    
 }
