@@ -130,8 +130,8 @@
     "Add new customer": "Uusi asiakas",
     "Add new invoice": "Uusi lasku",
     "company_invoicee": "Laskuttaja yritys",
-    "tos": "Palvelun käyttöehdot",
-    "tos_header": "Palvelulla ei ole mitään takuuta. Käyttö vaatii rekisteröinnin. Palvelu käyttää evästeitä ja Googlen Analytics palvelua ja User ID seurantaa.",
+    "tos_header": "Palvelun käyttöehdot",
+    "tos": "Palvelulla ei ole mitään takuuta. Käyttö vaatii rekisteröinnin. Palvelu käyttää evästeitä ja Googlen Analytics palvelua ja User ID seurantaa.",
     "i_agree": "Hyväksyn palvelun käyttöehdot"
 
 
