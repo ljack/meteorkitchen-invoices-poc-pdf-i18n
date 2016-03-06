@@ -3673,6 +3673,8 @@
 		"on_user_created_source_file": "",
 		"on_user_logged_source_file": "",
 		"server_side_routes": [],
-		"router_config": {}
+		"router_config": {
+			"trackPageView": true
+		}
 	}
 }
