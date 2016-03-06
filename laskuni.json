@@ -3638,7 +3638,8 @@
 				"tap:i18n",
 				"tap:i18n-ui",
 				"nilsdannemann:pdfmake",
-				"liyu:sprintfjs"
+				"liyu:sprintfjs",
+				"reywood:iron-router-ga"
 			],
 			"npm": [
 				"pdfmake"
