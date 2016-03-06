@@ -3631,6 +3631,10 @@
 			{
 				"source": "files/lasku-2.js",
 				"dest": "CLIENT_DIR/lasku-2.js"
+			},
+			{
+				"source": "files/settings.json",
+				"dest": "OUTPUT_DIR/settings.json"
 			}
 		],
 		"packages": {
