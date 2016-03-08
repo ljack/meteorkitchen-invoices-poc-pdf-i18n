@@ -69,7 +69,7 @@
     "OK": "OK",
     "home_public": "Invoices",
     "home_jumbotron": "Invoices ",
-    "home_jumbotron_text": "<b>This <a href=\"https://www.meteor.com\" target=\"_blank\">Meteor</a> application is made with <a href=\"http://www.meteorkitchen.com\" target=\"_blank\">meteor-kitchen</a> without manual coding.</b><br/>With it you can create invoices for multiple customers from multiple companies. Invoices can be printed as PDF files to be sent to the customer.",
+    "home_jumbotron_text": "<b>This <a href=\"https://www.meteor.com\" target=\"_blank\">Meteor</a> application is made with <a href=\"http://www.meteorkitchen.com\" target=\"_blank\">meteor-kitchen</a> without manual coding.</b><br/>With it you can create invoices for multiple customers from multiple companies. Invoices can be printed as PDF files to be sent to the customer. Also check the <a href='http://www.jambau.biz/blog/productprototypingwithmeteorkitchen'>blog<a/> about building MeteorKitchen apps.",
     "home_jumbotron_button": "Continue &raquo;",
     "Please sign in": "Please sign in",
     "Not a member?": "Not a member?",

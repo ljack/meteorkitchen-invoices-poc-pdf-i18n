@@ -443,7 +443,9 @@
 				],
 				"type": "collection",
 				"roles_allowed_to_insert": [],
-				"roles_allowed_to_download": [],
+				"roles_allowed_to_download": [
+					"owner"
+				],
 				"before_insert_code": "",
 				"before_update_code": "",
 				"before_remove_code": "",
@@ -894,7 +896,9 @@
 				"before_insert_code": "if(!doc.totalAmount) doc.totalAmount = 0;",
 				"type": "collection",
 				"roles_allowed_to_insert": [],
-				"roles_allowed_to_download": [],
+				"roles_allowed_to_download": [
+					"owner"
+				],
 				"before_update_code": "",
 				"before_remove_code": "",
 				"after_insert_code": "",
@@ -1124,7 +1128,9 @@
 				"after_remove_code": "var sum = 0; InvoiceItems.find({ invoiceId: doc.invoiceId }).map(function(item) { sum += item.amount; }); Invoices.update({ _id: doc.invoiceId }, { $set: { totalAmount: sum }});",
 				"type": "collection",
 				"roles_allowed_to_insert": [],
-				"roles_allowed_to_download": [],
+				"roles_allowed_to_download": [
+					"owner"
+				],
 				"before_remove_code": "",
 				"before_insert_source_file": "",
 				"before_update_source_file": "",
@@ -1523,12 +1529,20 @@
 						"show_in_read_only_form": true
 					}
 				],
-				"owner_field": "",
-				"roles_allowed_to_read": [],
+				"owner_field": "ownerId",
+				"roles_allowed_to_read": [
+					"owner"
+				],
 				"roles_allowed_to_insert": [],
-				"roles_allowed_to_update": [],
-				"roles_allowed_to_delete": [],
-				"roles_allowed_to_download": [],
+				"roles_allowed_to_update": [
+					"owner"
+				],
+				"roles_allowed_to_delete": [
+					"owner"
+				],
+				"roles_allowed_to_download": [
+					"owner"
+				],
 				"before_insert_code": "",
 				"before_update_code": "",
 				"before_remove_code": "",

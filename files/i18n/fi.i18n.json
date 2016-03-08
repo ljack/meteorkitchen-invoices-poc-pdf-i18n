@@ -69,7 +69,7 @@
     "OK": "OK",
     "home_public": "Laskut-sovellus",
     "home_jumbotron": "Laskut-sovellus",
-    "home_jumbotron_text": "Tämä on Laskut-sovellus.<b>Tämä <a href=\"https://www.meteor.com\" target=\"_blank\">Meteor</a> sovellus on tehty <a href=\"http://www.meteorkitchen.com\" target=\"_blank\">meteor-kitchen</a> koodigeneraattorilla.</b><br/>  Se on asiakaskortistosovellus jonka avulla voi kirjoittaa laskuja sekä tulostaa niitä PDF-muodossa",
+    "home_jumbotron_text": "Tämä on Laskut-sovellus.<b>Tämä <a href=\"https://www.meteor.com\" target=\"_blank\">Meteor</a> sovellus on tehty <a href=\"http://www.meteorkitchen.com\" target=\"_blank\">meteor-kitchen</a> koodigeneraattorilla.</b><br/>  Se on asiakaskortistosovellus jonka avulla voi kirjoittaa laskuja sekä tulostaa niitä PDF-muodossa. Katso myös <a href='http://www.jambau.biz/blog/productprototypingwithmeteorkitchen'>blogi</a> jossa käsitellään MeteorKitchen sovellusten rakentamista.",
     "home_jumbotron_button": "Jatka &raquo;",
     "Please sign in": "Kirjaudu sisään",
     "Not a member?": "Ei tunnuksia?",
