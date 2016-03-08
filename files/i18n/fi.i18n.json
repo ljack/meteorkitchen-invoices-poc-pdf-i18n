@@ -12,7 +12,7 @@
     "ourReference": "Viitteemme",
     "yourReference": "Viitteenne",
     "home_private": "<div class='ui inverted raised segment'>%s, tervetuloa Laskut-sovellukseen.</div>",
-    "home_private_text": "<div class='ui raised segment'><b>Laskut</b> -sovelluksellä voi kirjoittaa laskuja ja tulostaa ne PDF-muotoisina. Luo ensin yritys jolta haluat laskuttaa. Tämän jälkeen luo asiakas. Laskulle valitaan yritys ja asiakas.</div>",
+    "home_private_text": "<div class='ui raised segment'><b>Laskut</b> -sovelluksellä voi kirjoittaa laskuja ja tulostaa ne PDF-muotoisina. Luo ensin yritys jolta haluat laskuttaa. Tämän jälkeen luo asiakas. Laskulle valitaan yritys ja asiakas. Katso myös <a href='http://www.jambau.biz/blog/productprototypingwithmeteorkitchen'>blogi</a> jossa käsitellään MeteorKitchen sovellusten rakentamista.</div>",
 
     "change_pass": "Vaihda salasana",
     "ALV": "ALV",

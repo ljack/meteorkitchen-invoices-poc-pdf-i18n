@@ -12,7 +12,7 @@
     "ourReference": "Our reference",
     "yourReference": "Your reference",
     "home_private": "<div class='ui inverted raised segment'>Welcome to Invoices, %s.</div>",
-    "home_private_text": "<div class='ui raised segment'><b>Invoices</b> -app allows you to create invoices for your customers. First you need to create a company who is invoicing. Then create a customer. And for the invoice you'll choose a company and a customer.</div>",
+    "home_private_text": "<div class='ui raised segment'><b>Invoices</b> -app allows you to create invoices for your customers. First you need to create a company who is invoicing. Then create a customer. And for the invoice you'll choose a company and a customer. Also check the <a href='http://www.jambau.biz/blog/productprototypingwithmeteorkitchen'>blog<a/> about building MeteorKitchen apps.</div>",
 
     "change_pass": "Change password",
     "ALV": "VAT",
