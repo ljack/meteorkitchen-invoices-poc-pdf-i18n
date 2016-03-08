@@ -3666,7 +3666,7 @@
 		},
 		"on_user_logged_code": "console.log(\"User logged in\",Meteor.user().profile.name);",
 		"frontend": "semantic-ui",
-		"footer_text": "Check the <a href='http://www.jambau.biz/blog/productprototypingwithmeteorkitchen'>blog</a><br />This software comes with NO WARRANTIES. Use at your own risk. <i class=\"fa fa-bug\"></i> might be present.<br/><p> Page served <i class=\"fa fa-clock-o\"></i> {{showCurrentDateTime}}</p>",
+		"footer_text": "Check the <a href=\"http://www.jambau.biz/blog/productprototypingwithmeteorkitchen\">blog</a><br />This software comes with NO WARRANTIES. Use at your own risk. <i class=\"fa fa-bug\"></i> might be present.<br/><p> Page served <i class=\"fa fa-clock-o\"></i> {{showCurrentDateTime}}</p>",
 		"meta_description": "",
 		"meta_title": "",
 		"theme": "",
