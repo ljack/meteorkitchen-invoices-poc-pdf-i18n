@@ -3681,7 +3681,7 @@
 		"login_with_facebook": false,
 		"login_with_twitter": false,
 		"login_with_meteor": false,
-		"server_startup_code": " process.env.MAIL_URL = \"smtp://postmaster%40sandboxc1f86dbb9b85410eb853c4b31987f3b9.mailgun.org:1488bfb292e9b9469821cf4e7e34ecb7@smtp.mailgun.org:587\";\n",
+		"server_startup_code": "// get mail url from settings.json \nprocess.env.MAIL_URL = Meteor.settings.MAIL_URL;\n\n ",
 		"server_startup_source_file": "",
 		"client_startup_source_file": "",
 		"on_user_created_source_file": "",
