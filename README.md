@@ -1,4 +1,3 @@
-
 <pre>
   _                _____ _  ___    _ _   _ _____ 
  | |        /\    / ____| |/ / |  | | \ | |_   _|
@@ -10,9 +9,8 @@
                                                  
 </pre>
 
-Simple invoicing application for the web.
+Simple invoicing application for the web. Made using MeteorKitchen and Meteor.
 
+meteorkitchen-invoices-poc-pdf-i18n
+MeteorKitchen Invoices example app with PDF-invoices and i18n.
 
-Installation steps:
-
-1. Get laskuni.json from pim-d.
